@@ -256,7 +256,7 @@ const msgerChat = get(".msger-chat");
 const generateChartButton = document.getElementById('generateChartButton');
 
 const BOT_MSGS = [
-  "I’m a simple bot. I don’t have real responses yet!"
+  "Please upload your .CSV file"
 ];
 
 // Constants for bot and user images
