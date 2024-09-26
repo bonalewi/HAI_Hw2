@@ -49,6 +49,71 @@ body {
   background: #eee;
   color: #666;
 }
+.preview-container {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fix to the screen */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center horizontally and vertically */
+  width: 60%; /* Adjust width to your preference */
+  max-width: 700px;
+  max-height: 80%;
+  overflow-y: auto;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  z-index: 999; /* Make sure it is above all other elements */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.close-btn {
+  position: absolute; /* Position it absolutely */
+  right: 10px; /* 10px from the right */
+  top: 10px; /* 10px from the top */
+  background: none;
+  border: none;
+  font-size: 20px; /* Size of the 'x' */
+  cursor: pointer; /* Change cursor on hover */
+  color: red; /* Color for the 'x' */
+}
+
+.close-btn:hover {
+  background-color: #d32f2f;
+}
+#previewTable {
+  margin-top: 20px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+td {
+  font-size: 14px;
+}
 
 .msger-chat {
   flex: 1;
